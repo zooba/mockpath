@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "MockPath"
+author = "Steve Dower"
+author-email = "steve.dower@python.org"
+home-page = "http://github.com/zooba/mockpath"
+description-file = "readme.md"
+requires-python= ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+]
+
+[tool.flit.sdist]
+exclude = [".github", ".gitignore"]
